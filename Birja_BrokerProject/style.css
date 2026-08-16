@@ -1,0 +1,337 @@
+/* Google Fonts ulash */
+@import url("https://googleapis.com");
+
+/* Umumiy Sozlamalar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+  color: #f8fafc;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Asosiy Konteyner */
+.dashboard-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  height: 85vh;
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Chap menyu (Sidebar) */
+.sidebar {
+  width: 260px;
+  background: rgba(15, 23, 42, 0.6);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo i {
+  font-size: 24px;
+  color: #6366f1;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: -100px;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #94a3b8;
+  text-decoration: none;
+  padding: 12px 15px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover,
+.menu a.active {
+  background: #6366f1;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-radius: 16px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: #8b5cf6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.user-info h4 {
+  font-size: 14px;
+}
+.user-info p {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+/* Asosiy Oyna */
+.main-content {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.welcome-text h1 {
+  font-size: 26px;
+  font-weight: 600;
+}
+.welcome-text p {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: rgba(15, 23, 42, 0.5);
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.search-box input {
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin-left: 10px;
+}
+
+/* Grid dizayn */
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+/* 1. Neon Karta */
+.crypto-card {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  border-radius: 20px;
+  padding: 25px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.crypto-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.visa-icon {
+  font-size: 35px;
+}
+.card-chip {
+  font-size: 28px;
+  color: #f59e0b;
+  margin: 15px 0;
+}
+.card-balance p {
+  font-size: 12px;
+  opacity: 0.8;
+}
+.card-balance h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.card-holder p {
+  font-size: 10px;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+
+/* 2. Kripto Bozor */
+.crypto-market {
+  background: rgba(15, 23, 42, 0.4);
+  border-radius: 20px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.crypto-market h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.crypto-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 12px 15px;
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
+
+.coin-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.coin-info i {
+  font-size: 24px;
+}
+.btc {
+  color: #f59e0b;
+}
+.eth {
+  color: #627eea;
+}
+
+.trend {
+  font-size: 12px;
+  font-weight: bold;
+}
+.trend.up {
+  color: #10b981;
+}
+.trend.down {
+  color: #ef4444;
+}
+
+/* 3. Tezkor Amallar Panel */
+.quick-actions {
+  grid-column: span 2;
+  background: rgba(15, 23, 42, 0.4);
+  border-radius: 20px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.quick-actions h3 {
+  margin-bottom: 15px;
+}
+.actions-group {
+  display: flex;
+  gap: 20px;
+}
+
+.action-btn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 15px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-btn i {
+  font-size: 20px;
+  color: #6366f1;
+}
+
+.action-btn:hover {
+  background: #6366f1;
+  border-color: #6366f1;
+}
+.action-btn:hover i {
+  color: #fff;
+}
+
+/* Animatsiya */
+.animate-logo {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    color: #8b5cf6;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsivlik (Mobil qurilmalar uchun) */
+@media (max-width: 900px) {
+  .dashboard-container {
+    flex-direction: column;
+    height: auto;
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+  .menu {
+    margin-top: 20px;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+  .content-grid {
+    grid-template-columns: 100%;
+  }
+  .quick-actions {
+    grid-column: span 1;
+  }
+  .actions-group {
+    flex-wrap: wrap;
+  }
+}

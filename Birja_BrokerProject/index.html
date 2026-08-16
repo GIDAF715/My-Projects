@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto & Wallet Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Ikonkalar uchun FontAwesome ulash -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <!-- Chap tomondagi Menyu (Sidebar) -->
+      <aside class="sidebar">
+        <div class="logo">
+          <i class="fa-solid fa-wallet animate-logo"></i>
+          <h2>ApexPay</h2>
+        </div>
+        <nav class="menu">
+          <a href="#" class="active"
+            ><i class="fa-solid fa-chart-pie"></i> Dashboard</a
+          >
+          <a href="#"
+            ><i class="fa-solid fa-arrow-right-arrow-left"></i> O'tkazmalar</a
+          >
+          <a href="#"
+            ><i class="fa-solid fa-credit-card"></i> Mening Kartalarim</a
+          >
+          <a href="#"><i class="fa-solid fa-gear"></i> Sozlamalar</a>
+        </nav>
+        <div class="user-profile">
+          <div class="avatar">JS</div>
+          <div class="user-info">
+            <h4>John Doe</h4>
+            <p>Premium Foydalanuvchi</p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Asosiy Qism (Main Content) -->
+      <main class="main-content">
+        <!-- Yuqori qism (Header) -->
+        <header class="header">
+          <div class="welcome-text">
+            <h1>Xush kelibsiz, John!</h1>
+            <p>Bugungi moliyaviy holatingiz g'ayratli.</p>
+          </div>
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Qidiruv..." />
+          </div>
+        </header>
+
+        <!-- Grid Kontent -->
+        <div class="content-grid">
+          <!-- 1. Virtual Visa Karta (Neon Glassmorphism) -->
+          <div class="crypto-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <div class="card-row">
+                  <span class="card-type">Virtual Card</span>
+                  <i class="fa-brands fa-cc-visa visa-icon"></i>
+                </div>
+                <div class="card-chip">
+                  <i class="fa-solid fa-microchip"></i>
+                </div>
+                <div class="card-balance">
+                  <p>Balans</p>
+                  <h2>$12,450.80</h2>
+                </div>
+                <div class="card-row card-holder">
+                  <div>
+                    <p>Eshik egasi</p>
+                    <h4>JOHN DOE</h4>
+                  </div>
+                  <div>
+                    <p>Amal qilish muddati</p>
+                    <h4>12/29</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Kripto Bozor Kurslari -->
+          <div class="crypto-market">
+            <h3>Kripto Bozor</h3>
+            <div class="crypto-item">
+              <div class="coin-info">
+                <i class="fa-brands fa-bitcoin btc"></i>
+                <div>
+                  <h4>Bitcoin</h4>
+                  <p>BTC/USD</p>
+                </div>
+              </div>
+              <div class="coin-price">
+                <h4>$64,250.00</h4>
+                <span class="trend up"
+                  ><i class="fa-solid fa-caret-up"></i> +4.2%</span
+                >
+              </div>
+            </div>
+
+            <div class="crypto-item">
+              <div class="coin-info">
+                <i class="fa-brands fa-ethereum eth"></i>
+                <div>
+                  <h4>Ethereum</h4>
+                  <p>ETH/USD</p>
+                </div>
+              </div>
+              <div class="coin-price">
+                <h4>$3,450.12</h4>
+                <span class="trend down"
+                  ><i class="fa-solid fa-caret-down"></i> -1.5%</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Tezkor Harakatlar Panel -->
+          <div class="quick-actions">
+            <h3>Tezkor Amallar</h3>
+            <div class="actions-group">
+              <button class="action-btn">
+                <i class="fa-solid fa-paper-plane"></i><span>Yuborish</span>
+              </button>
+              <button class="action-btn">
+                <i class="fa-solid fa-wallet"></i><span>To'ldirish</span>
+              </button>
+              <button class="action-btn">
+                <i class="fa-solid fa-qrcode"></i><span>QR Kod</span>
+              </button>
+              <button class="action-btn">
+                <i class="fa-solid fa-ellipsis"></i><span>Ko'proq</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
